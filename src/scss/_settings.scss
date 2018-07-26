@@ -1,0 +1,28 @@
+$color-bg: red;
+$fontFamily: 'Georgia', sans-serif;
+$font-gray: #657079;
+
+$color-blue: #7c80ff;
+$color-gray: #657079;
+$color-orange: #ff9900;
+
+$font-georgia: Georgia, sans-serif;
+
+$browserContext: 16;
+$baseWidth: 1000;
+$baseHeight: 547;
+
+@function em($pixels, $context: $browserContext) {
+  @return #{$pixels/$context}em;
+}
+
+@function vh($target) {
+  $vh-context: ($baseHeight*.01);
+  @return #{$target/$vh-context}vh;
+}
+
+@function vw($target) {
+  $vw-context: ($baseWidth*.01);
+  @return #{$target/$vw-context}vw;
+}
+
