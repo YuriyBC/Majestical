@@ -3,36 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Majestical</title>
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300|Bungee+Inline" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <div class="header">
     <div class="header-nav">
       <div class="header-nav__button__container">
-        <a class="header-nav__button">
+        <a class="header-nav__button" href="/">
           <p>HOMEPAGE</p>
-          <span>test text here</span>
+          <span>go home</span>
         </a>
-        <a class="header-nav__button">
+        <a class="header-nav__button" href="#demo">
           <p>STYLE DEMO</p>
-          <span>test text here</span>
+          <span>demo</span>
         </a>
-        <a class="header-nav__button">
+        <a class="header-nav__button" href="#width">
           <p>FULL WIDTH</p>
-          <span>test text here</span>
+          <span>switch width</span>
         </a>
-        <a class="header-nav__button">
+        <a class="header-nav__button" href="#portfolio">
           <p>PORTFOLIO</p>
-          <span>test text here</span>
+          <span>show portfolio</span>
         </a>
-        <a class="header-nav__button">
+        <a class="header-nav__button" href="#gallery">
           <p>GALLERY</p>
-          <span>test text here</span>
+          <span>show gallery</span>
         </a>
-        <a class="header-nav__button">
+        <div class="header-nav__button">
           <p>DROPDOWN</p>
-          <span>test text here</span>
-        </a>
+          <span>more options</span>
+          <div class="header-nav__button__dropdown">
+            <div class="header-nav__button__dropdown-item">
+              <a href="/">No more options</a>
+              <span>Sorry</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="header-nav__icons">
         <div><img src="./img/icon-linkedin.png" alt=""></div> 
@@ -50,7 +57,7 @@
             <h1>MAJESTICAL</h1>
           </div>
           <div class="header-content__subtitle">
-            <h3>Free PSD Website Template</h3>
+            <h3>Design studio</h3>
           </div>
         </span>
         <span>
@@ -62,39 +69,180 @@
       </div>
       <div class="header-content__image__section">
         <div class="header-content__image">
+          <img src="./img/img_logo_skeleton.jpg" alt="">
+          <img class="middle" src="./img/logo_middle.jpg" alt="">
+          <img src="./img/img_logo.jpg" alt="">
         </div>
       </div>
-
-
-
-
     </div>
   </div>
   <div class="info">
     <div class="info__nav">
-      <span >You Are Here</span> >
-      <span class="active">Homepage</span>
+      <a href="#here">You Are Here</a> >
+      <a href="/" class="active">Homepage</a>
     </div>
+
     <div class="info__content">
       <div class="info__content__title">
-        <h1>WELCOME TITLE</h1>
-        <span>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque „</span>
+        <h1>WE MAKE DIGITAL EASY</h1>
+        <span>“ OUR VISION - We believe that great design and effective communication are key ingredients for improving our lives and the world around us. „</span>
       </div>
     </div>
+
     <div class="info__content__quotes">
       <div class="info__content__quotes__block">
         <h1>What People Say About Us</h1>
-        <div></div>
-        <div></div>
+        <div class="info__content__quotes__block-item block-item">
+          <div class="block-item__title">
+            <img src="./img/quotes_img.png" alt="">
+            <b>Tommy Tanker</b><span>-</span>CEO
+          </div>
+          <div class="block-item__text">
+            I don't even know where to begin saying how grateful I am for the team that is and has assisted me with my project. I had a few doubts about going forward with this project thinking that it may be a failure, and I would be wasting my, money but I prayed about it and went from there.
+          </div>
+        </div>
+        <div class="info__content__quotes__block-item block-item">
+          <div class="block-item__title">
+            <img src="./img/quotes_img.png" alt="">
+            <b>Jon Snow</b><span>-</span>CEO
+          </div>
+          <div class="block-item__text">
+            IDS has really helped me get my project off the ground. I didn't know what I was getting myself into when I first partnered with IDS, but after experiencing their heightened level of customer service, I am confident in the success of my product!
+          </div>
+        </div>
       </div>
-      <div class="info__content__quotes__block">
+      <div class="info__content__quotes__block info__content__team">
         <h1>Meet The Team</h1>
-        <div></div>
-        <div></div>
+        <div class="team-item block-item">
+          <div class="team-item__img">
+            <img src="./img/preson_1.jpg" alt="">
+          </div>
+          <div class="team-item__info">
+            <h3 class="team-item__info-title">Josh Seward</h3>
+            <span class="team-item__info-text">
+             Josh Seward grew up in Columbia, South Carolina, where his love of architecture and design was furthered by his parents.
+            </span>
+          </div>
+        </div>
+        <div class="team-item block-item">
+          <div class="team-item__img">
+            <img src="./img/person_2.jpg" alt="">
+          </div>
+          <div class="team-item__info">
+            <h3 class="team-item__info-title">Pol Linch</h3>
+            <span class="team-item__info-text">
+              His academic training greatly influenced his design philosophy. He received a Bachelor of Arts from the University of Oregon’s School of Architecture and Allied Arts.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!---->
+  <!--work section-->
+  <!---->
+    <div class="work">
+      <div class="work__examples">
+        <div class="work__item">
+          <div class="work__item-title">
+            Latest Work
+          </div>
+          <div class="work__item-text">
+            Anda Creative has been the design sponsor for WordCamp Saint Louis since 2014. WordCamp is a conference that focuses on everything WordPress, a Content Management System used in web development.
+          </div>
+        </div>
+        <div class="work__item">
+          <div class="work__item-img">
+            <img src="./img/work_1.jpg" alt="">
+          </div>
+          <div class="work__item-text">
+            Anda Creative recently teamed up with global shoe brand MBT® to design and develop the website for MBT’s new line of running shoes and compression apparel.
+          </div>
+          <a href="">View This Project »</a>
+        </div>
+        <div class="work__item">
+          <div class="work__item-img">
+            <img src="./img/wok_2.jpg" alt="">
+          </div>
+          <div class="work__item-text">
+            Anda Creative recently teamed up with Los Angeles-based Dynasty Footwear to help with a stylish comfort footwear brand for a well-known fashion retailer.
+          </div>
+          <a href="">View This Project »</a>
+        </div>
+        <div class="work__item">
+          <div class="work__item-img">
+            <img src="./img/work_3.jpg" alt="">
+          </div>
+          <div class="work__item-text">
+            Everyone from casual users to core developers participate, share ideas, and get to know each other.Anda Creative designs a new and unique logo and color palette.
+          </div>
+          <a href="">View This Project »</a>
+        </div>
+      </div>
+      <!---->
+      <!--work section bottom part-->
+      <!---->
+    </div>
+    <div class="work__twitter">
+      <img src="./img/icon-twitter-big.png" alt="">
+      <span>
+          "There are three responses to a piece of design – yes, no, and WOW!"
+        </span>
+    </div>
+    <!---->
+    <!--contact section-->
+    <!---->
+  </div>
+  <div class="contacts">
+    <div class="contacts__item">
+      <div class="contacts__item-title">CONTACT DETAILS</div>
+      <div class="contacts__item-content">
+        <ul>
+          <li>Company Name</li>
+          <li>Street Name & Number</li>
+          <li>Town</li>
+          <li>Postcode/Zip</li>
+          <li>Tel: xxxxx xxxxxxxxxx</li>
+          <li>Fax: xxxxx xxxxxxxxxx</li>
+          <li>Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contacts__item contacts__item-links">
+      <div class="contacts__item-title">QUICK LINKS</div>
+      <div class="contacts__item-content">
+        <ul>
+          <li><a href="">Link Text Here</a></li>
+          <li><a href="">Link Text Here</a></li>
+          <li><a href="">Link Text Here</a></li>
+          <li><a href="">Link Text Here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contacts__item">
+      <div class="contacts__item-title">FROM THE BLOG</div>
+      <div class="contacts__item-content">
+        <p>Blog Post Title</p>
+        <span>Posted by Admin on 00.00.0000</span>
+        <span>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</span>
+        <span class="right_align"><a href="">Read More »</a></span>
+      </div>
+    </div>
+    <div class="contacts__item">
+      <div class="contacts__item-title">GRAB OUR NEWSLETTER</div>
+      <div class="contacts__item-content">
+        <input placeholder="Name" type="text">
+        <input placeholder="Email"  type="text">
+        <button>Submit</button>
       </div>
     </div>
   </div>
-
+  <!---->
+  <!--footer section-->
+  <!---->
+  <div class="footer">
+    <span>Copyright © 2018 - All Rights Reserved</span>
+    <span>Template by OS Templates / Implementation by Yuriy Krishchuk</span>
+  </div>
 
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
