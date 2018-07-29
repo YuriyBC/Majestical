@@ -1,0 +1,42 @@
+@import "settings";
+@import "header";
+@import "info";
+@import "examples";
+@import "contacts";
+@import "footer";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e1e1e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+input, button {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+//
+//cursor: pointer;
+//transition: 0.3s;
+//&:hover {
+//  filter: brightness(105%)
+//}
+//&:active {
+//  opacity: 0.4;
+//}
+

@@ -1,0 +1,113 @@
+@import "settings";
+
+.contacts {
+  position: relative;
+  height: vw(350);
+  display: flex;
+  background-color: #252525;
+  justify-content: space-between;
+  margin-top: vw(-145);
+  padding: vw(170) vw(25) 0 vw(25);
+  z-index: 1;
+}
+
+.contacts__item {
+  width: 22%;
+  height: auto;
+  font-family: $font-georgia;
+  .contacts__item-title {
+    color: #666666;
+    font-size: vw(13);
+    margin-bottom: vw(20);
+  }
+  .contacts__item-content {
+    font-size: vw(12);
+    color: #868686;
+    p {
+      font-weight: bold;
+      margin-bottom: vw(5);
+    }
+    span {
+      display: block;
+      margin-bottom: vw(5);
+    }
+    a {
+      color: $color-orange;
+      &:hover {
+        filter: brightness(105%)
+      }
+      &:active {
+        opacity: 0.4;
+      }
+    }
+    .right_align {
+      text-align: right;
+    }
+  }
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  li {
+    color: #868686;
+    font-size: vw(12);
+  }
+}
+
+.contacts__item-content input, .contacts__item-content button {
+  border-radius: vw(10);
+  height: vw(28);
+  font-family: $font-georgia;
+}
+
+
+.contacts__item-content input {
+  width: vw(200);
+  margin-bottom: vw(10);
+  background-color: #333333;
+  color: #868686;
+  font-size: vw(13);
+  padding-left: vw(10);
+}
+
+.contacts__item-content button {
+  width: vw(70);
+  background-color: #333333;
+  color: #ff9900;
+  font-size: vw(13);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background: $color-orange;
+    color: white;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.contacts__item-links {
+  margin-left: vw(-4);
+  ul>li {
+    color: $color-orange;
+    width: 100%;
+    padding: vw(5) 0 vw(5) vw(4);
+    border-bottom: vw(1) solid #333333;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-orange;
+      border-bottom: vw(1) solid whitesmoke;
+      a {
+        color: white;
+      }
+    }
+  }
+  .contacts__item-title {
+    padding-left: vw(4);
+  }
+}

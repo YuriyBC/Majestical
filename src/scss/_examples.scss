@@ -1,0 +1,87 @@
+@import "settings";
+
+.work {
+  padding: vw(30) vw(25) vw(5) vw(25);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background: white;
+}
+
+.work__examples {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__item {
+  font-family: $font-georgia;
+  padding-right: vw(10);
+  .work__item-title {
+    font-size: vw(22);
+    color: #666666;
+  }
+  .work__item-img {
+    position: relative;
+    width: vw(210);
+    height: vw(140);
+    overflow: hidden;
+    background-color: #333333;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      filter: brightness(200%)
+    }
+    &:active {
+      opacity: 0.4;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      right: 10%;
+      bottom: 0;
+      box-shadow: 0 vw(2) vw(7) vw(3) rgba(0,0,0,0.4);
+    }
+  }
+  .work__item-text {
+    margin: vw(15) 0 vw(13) 0;
+    color: #999999;
+    font-size: vw(13);
+  }
+  a {
+    outline: none;
+    color: $color-orange;
+    font-size: vw(12);
+  }
+}
+
+.work__twitter {
+  display: flex;
+  align-items: center;
+  padding: vw(35) vw(25) vw(15) vw(25);
+  background: white;
+  z-index: 1;
+  img {
+    width: vw(100);
+    height: auto;
+    margin-right: vw(35);
+  }
+  div {
+    width: 80%;
+    span {
+      display: inline;
+      font-family: $font-georgia;
+      width: 100%;
+      color: #999999;
+      font-size: vw(18);
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      white-space: nowrap;
+    }
+  };
+}
