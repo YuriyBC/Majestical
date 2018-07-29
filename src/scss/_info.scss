@@ -4,6 +4,7 @@
   position: relative;
   background-color: #e1e1e1;
   margin: 0 vw(20) 0 vw(22);
+  padding: 0!important;
   z-index: 2;
   .info__nav {
     height: vw(50);
@@ -11,8 +12,9 @@
     display: flex;
     align-items: center;
     background-color: #f0f0f0;
+
     a {
-      padding: 0 vw(5);
+      padding: vw(3) vw(5) 0 vw(5);
       font-family: $font-georgia;
       font-size: vw(12);
       &.active {
@@ -42,9 +44,14 @@
       color: #dddddd;
     }
     span {
-      font-size: vw(28);
-      font-style: italic;
+      font-size: vw(20)!important;
       color: #989898;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange; /* The typwriter cursor */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      white-space: nowrap;
+      animation: typing 4s steps(150, end),
+                 blink-caret .5s step-end infinite;
     }
   }
 }
@@ -65,13 +72,16 @@
     right: vw(25);
     height: vw(1);
     background-color: #e1e1e1;
+    z-index: 0;
   }
 }
 .info__content__quotes__block {
   display: flex;
   flex-direction: column;
+  z-index: 1;
   width: 48%;
   h1 {
+    font-size: vw(25);
     margin: 0;
     padding: vw(45) 0 vw(25) 0;
     font-family: $font-georgia;
@@ -101,6 +111,7 @@
     }
   }
   .block-item__text {
+    display: flex;
     padding-top: vw(10);
     font-family: $font-georgia;
     font-weight: 100;
@@ -136,6 +147,8 @@
       }
     }
     .team-item__info {
+      display: flex;
+      flex-direction: column;
       padding-left: vw(20);
       font-family: $font-georgia;
     }

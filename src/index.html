@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>Majestical</title>
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300|Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <div class="header">
+  <div class="header animated fadeIn">
     <div class="header-nav">
-      <div class="header-nav__button__container">
+      <div class="header-nav__button__container animated bounceInDown">
         <a class="header-nav__button" href="/">
           <p>HOMEPAGE</p>
           <span>go home</span>
@@ -52,7 +54,7 @@
 
     <div class="header-content">
       <div class="header-content__title__section">
-        <span>
+        <span class="animated bounceInLeft">
            <div class="header-content__title">
             <h1>MAJESTICAL</h1>
           </div>
@@ -69,30 +71,34 @@
       </div>
       <div class="header-content__image__section">
         <div class="header-content__image">
-          <img src="./img/img_logo_skeleton.jpg" alt="">
-          <img class="middle" src="./img/logo_middle.jpg" alt="">
-          <img src="./img/img_logo.jpg" alt="">
+          <img class="animated bounceInDown" src="./img/img_logo_skeleton.jpg" alt="">
+          <img class="middle animated bounceInUp" src="./img/logo_middle.jpg" alt="">
+          <img class="animated bounceInRight" src="./img/img_logo.jpg" alt="">
         </div>
       </div>
     </div>
   </div>
+  <!---->
+  <!--info section-->
+  <!---->
+
   <div class="info">
     <div class="info__nav">
-      <a href="#here">You Are Here</a> >
+      <a href="#here">You Are Here</a> »
       <a href="/" class="active">Homepage</a>
     </div>
 
     <div class="info__content">
-      <div class="info__content__title">
+      <div class="info__content__title wow fadeIn" data-wow-duration="0.5s">
         <h1>WE MAKE DIGITAL EASY</h1>
-        <span>“ OUR VISION - We believe that great design and effective communication are key ingredients for improving our lives and the world around us. „</span>
+        <span>“We believe that great design and effective communication are key ingredients for improving our lives„</span>
       </div>
     </div>
 
     <div class="info__content__quotes">
       <div class="info__content__quotes__block">
         <h1>What People Say About Us</h1>
-        <div class="info__content__quotes__block-item block-item">
+        <div class="info__content__quotes__block-item block-item wow slideInLeft">
           <div class="block-item__title">
             <img src="./img/quotes_img.png" alt="">
             <b>Tommy Tanker</b><span>-</span>CEO
@@ -101,7 +107,7 @@
             I don't even know where to begin saying how grateful I am for the team that is and has assisted me with my project. I had a few doubts about going forward with this project thinking that it may be a failure, and I would be wasting my, money but I prayed about it and went from there.
           </div>
         </div>
-        <div class="info__content__quotes__block-item block-item">
+        <div class="info__content__quotes__block-item block-item wow slideInUp">
           <div class="block-item__title">
             <img src="./img/quotes_img.png" alt="">
             <b>Jon Snow</b><span>-</span>CEO
@@ -113,7 +119,7 @@
       </div>
       <div class="info__content__quotes__block info__content__team">
         <h1>Meet The Team</h1>
-        <div class="team-item block-item">
+        <div class="team-item block-item wow slideInRight">
           <div class="team-item__img">
             <img src="./img/preson_1.jpg" alt="">
           </div>
@@ -124,7 +130,7 @@
             </span>
           </div>
         </div>
-        <div class="team-item block-item">
+        <div class="team-item block-item wow slideInUp">
           <div class="team-item__img">
             <img src="./img/person_2.jpg" alt="">
           </div>
@@ -140,7 +146,7 @@
   <!---->
   <!--work section-->
   <!---->
-    <div class="work">
+    <div class="work wow fadeIn">
       <div class="work__examples">
         <div class="work__item">
           <div class="work__item-title">
@@ -184,15 +190,17 @@
     </div>
     <div class="work__twitter">
       <img src="./img/icon-twitter-big.png" alt="">
-      <span>
+      <div>
+        <span>
           "There are three responses to a piece of design – yes, no, and WOW!"
-        </span>
+      </span>
+      </div>
     </div>
     <!---->
     <!--contact section-->
     <!---->
   </div>
-  <div class="contacts">
+  <div class="contacts wow slideInLeft fast">
     <div class="contacts__item">
       <div class="contacts__item-title">CONTACT DETAILS</div>
       <div class="contacts__item-content">
@@ -246,5 +254,8 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
   </body>
 </html>

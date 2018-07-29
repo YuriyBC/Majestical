@@ -71,9 +71,17 @@
     height: auto;
     margin-right: vw(35);
   }
-  span {
-    font-family: $font-georgia;
-    color: #999999;
-    font-size: vw(18);
-  }
+  div {
+    width: 80%;
+    span {
+      display: inline;
+      font-family: $font-georgia;
+      width: 100%;
+      color: #999999;
+      font-size: vw(18);
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      white-space: nowrap;
+    }
+  };
 }

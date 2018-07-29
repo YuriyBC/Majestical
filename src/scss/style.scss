@@ -11,6 +11,10 @@ body {
   background: #e1e1e1;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3 {
   margin: 0;
 }

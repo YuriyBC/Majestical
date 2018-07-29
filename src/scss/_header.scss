@@ -203,10 +203,7 @@
       overflow: hidden;
       background-color: #333333;
       display: flex;
-      .middle {
-        transform: rotate(270deg);
-        margin-top: vw(-60);
-      }
+      justify-content: space-between;
       img {
         width: auto;
         height: 100%;
